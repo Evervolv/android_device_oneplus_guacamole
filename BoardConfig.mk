@@ -12,6 +12,9 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 # Assert
 TARGET_OTA_ASSERT_DEVICE := OnePlus7Pro
 
+# Display
+TARGET_SCREEN_DENSITY := 560
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
 
