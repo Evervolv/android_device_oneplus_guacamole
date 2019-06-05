@@ -8,6 +8,9 @@
 BOARD_VENDOR := oneplus
 DEVICE_PATH := device/oneplus/guacamole
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := OnePlus7Pro,OnePlus7ProTMO,guacamole
+
 # Display
 TARGET_SCREEN_DENSITY := 560
 
@@ -28,6 +31,10 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_guacamole
+TARGET_RECOVERY_DEVICE_MODULES := libinit_guacamole
 
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
