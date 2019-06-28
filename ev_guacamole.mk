@@ -7,20 +7,22 @@
 # Inherit from guacamole device
 $(call inherit-product, device/oneplus/guacamole/aosp_guacamole.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_NAME := ev_guacamole
+PRODUCT_MODEL := guacamole
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common evervolv stuff.
+$(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_phone.mk)
 
-# Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_guacamole
-PRODUCT_DEVICE := guacamole
-PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_MODEL := GM1911
-PRODUCT_BRAND := OnePlus
+# Inherit evervolv overlays.
+DEVICE_PACKAGE_OVERLAYS += device/oneplus/guacamole/overlay-ev
 
+# Bootanimation
+BOOT_ANIMATION_SIZE := 1440p
+
+# Codename
+PRODUCT_CODENAME := Expletus
+
+# Build info
 PRODUCT_SYSTEM_NAME := OnePlus7Pro
 PRODUCT_SYSTEM_DEVICE := OnePlus7Pro
 
