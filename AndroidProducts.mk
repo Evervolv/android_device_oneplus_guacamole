@@ -6,12 +6,12 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_guacamole.mk \
-    $(LOCAL_DIR)/lineage_guacamole.mk
+    $(LOCAL_DIR)/ev_guacamole.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_guacamole-eng \
     aosp_guacamole-userdebug \
     aosp_guacamole-user \
-    lineage_guacamole-eng \
-    lineage_guacamole-userdebug \
-    lineage_guacamole-user
+    ev_guacamole-eng \
+    ev_guacamole-userdebug \
+    ev_guacamole-user
