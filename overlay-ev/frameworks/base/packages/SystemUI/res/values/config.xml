@@ -9,7 +9,7 @@
 <resources>
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">6</integer>
-    <integer name="config_maxVisibleNotificationIconsOnLock">7</integer>
+    <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
 
     <!-- Color of the UDFPS Pressed view -->
     <color name="config_udfpsColor">#00ff00</color>
