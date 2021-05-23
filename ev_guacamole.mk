@@ -18,7 +18,7 @@
 $(call inherit-product, device/oneplus/guacamole/aosp_guacamole.mk)
 
 PRODUCT_NAME := ev_guacamole
-PRODUCT_MODEL := guacamole
+PRODUCT_MODEL := GM1917
 
 # Inherit some common evervolv stuff.
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/config/common_full_phone.mk)
