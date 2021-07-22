@@ -85,6 +85,10 @@ void load_props(const char* model, bool is_tmo) {
     }
     ro_prop_override(nullptr, "description", BUILD_DESCRIPTION[is_tmo ? 1 : 0], false);
     ro_prop_override(nullptr, "product", is_tmo ? "OnePlus7ProTMO" : "OnePlus7Pro", false);
+
+    if (is_tmo) {
+        property_override("persist.radio.multisim.config", "ssss");
+    }
 }
 }  // anonymous namespace
 
