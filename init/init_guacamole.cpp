@@ -43,13 +43,13 @@ constexpr const char* RO_PROP_SOURCES[] = {
 };
 
 constexpr const char* BUILD_DESCRIPTION[] = {
-        "OnePlus7Pro-user 10 QKQ1.190716.003 1909110008 release-keys",
-        "OnePlus7ProTMO-user 10 QKQ1.190716.003 2004271445 release-keys",
+        "OnePlus7Pro-user 11 RKQ1.201022.002 2110211503 release-keys",
+        "OnePlus7ProTMO-user 11RKQ1.201022.002 2107302111 release-keys",
 };
 
 constexpr const char* BUILD_FINGERPRINT[] = {
-        "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/1909110008:user/release-keys",
-        "OnePlus/OnePlus7ProTMO/OnePlus7ProTMO:10/QKQ1.190716.003/2004271445:user/release-keys",
+        "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2110211503:user/release-keys",
+        "OnePlus/OnePlus7ProTMO/OnePlus7ProTMO:11/RKQ1.201022.002/2107302111:user/release-keys",
 };
 
 void property_override(char const prop[], char const value[], bool add = true)
