@@ -6,7 +6,6 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
 #<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
-<<<<<<< HEAD
 /dev/block/bootdevice/by-name/system                    /                      ext4    ro,barrier=1,discard                                 wait,slotselect,avb
 /dev/block/bootdevice/by-name/metadata                  /metadata              ext4    noatime,nosuid,nodev,discard,sync                    wait,check,formattable
 /dev/block/bootdevice/by-name/userdata                  /data                  ext4    noatime,nosuid,nodev,barrier=1,noauto_da_alloc,discard,inlinecrypt latemount,wait,check,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:keydirectory=/metadata/vold/metadata_encryption,quota,formattable,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,reservedsize=512M,checkpoint=block
